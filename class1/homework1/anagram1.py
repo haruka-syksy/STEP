@@ -93,4 +93,5 @@ if __name__=='__main__':
         print("残念！アナグラムはなかったよ...")
     else:
         print(word+"のアナグラムはこちら！")
-        print(ans)
+        for i in range(len(ans)):
+            print(ans[i])
