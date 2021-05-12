@@ -3,7 +3,7 @@ import sys
 
 def read_dictionary():
     #ソートしてある辞書を読み込む
-    f = open('score_sort_dictionary_int_array.txt', 'r')
+    f = open('score_sort_dictionary.txt', 'r')
     data = f.read()
     f.close()
 
