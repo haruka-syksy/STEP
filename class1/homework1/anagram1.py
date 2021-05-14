@@ -4,12 +4,10 @@ def read_dictionary():
     data = f.read()
     f.close()
 
-    list = data.split() #\nを除いて配列にする
+    list1 = data.split() #\nを除いて配列にする
 
     new = []
-    for i in range(len(list)):#ソートした言葉と元の言葉をペアにする
-        l = list[i].split(',')
-        new.append((l[0], l[1]))
+    new = list(map(lambda x: x.split(','), list1))
     return new
 
 def binary_search(dictionary, value, word):
@@ -38,27 +36,25 @@ def binary_search(dictionary, value, word):
     return _binary_search(dictionary, value, 0, len(dictionary)-1)
 
 def min_index(dictionary, mid):
-    min_i = -1
+    min_i = mid
     if mid > 0:
-        for i in range(mid-1, -1, -1):
+        i = mid-1
+        while(i>= 0):
             if dictionary[mid][0] != dictionary[i][0]:
-                if min_i == -1:
-                    min_i = mid
                 return min_i
             else:
                 min_i = i
                 if i - 1 < 0:#アンダーフロー回避
                     return min_i
+            i -= -1
     else:
         return mid
 
 def max_index(dictionary, mid):
-    max_i = -1
+    max_i = mid
     if mid < len(dictionary)-1:
         for i in range(mid+1, len(dictionary)):
             if dictionary[mid][0] != dictionary[i][0]:
-                if max_i == -1:
-                    max_i = mid
                 return max_i
             else:
                 max_i = i
