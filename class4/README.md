@@ -5,8 +5,8 @@ wikipediaのリンク構造を使って面白いことを見つける
 C++(g++ 4.2.1)
 
 ## プログラム
-- google_to_shibuya.cpp : "Google"から"渋谷"までの経路を調べる
-- (おまけ) ken_search.cpp : 47都道府県について、自分以外の県にリンクが接続しているか調べる。
+- [google_to_shibuya.cpp](https://github.com/koomin-1122/STEP/blob/main/class4/google_to_shibuya.cpp) : "Google"から"渋谷"までの経路を調べる
+- (おまけ) [ken_search.cpp](https://github.com/koomin-1122/STEP/blob/main/class4/ken_search.cpp) : 47都道府県について、自分以外の県にリンクが接続しているか調べる。
 
 ## 実行
 [wikipedia_data.zip](https://drive.google.com/file/d/1zqtjSb-ZoR4rzVUWZrjNSES5GKJhYmmH/view?usp=sharing) をダウンロードして解凍し、以下のようなディレクトリ構成にする。
@@ -42,7 +42,7 @@ g++ google_to_shibuya.cpp -o google_to_shibuya
 g++ ken_search.cpp -o ken_search -std=c++11
 ```
 
-どちらもファイル(`pages.txt`, `links.txt`)の読み込みに20分弱かかるので気長にお待ちください...
+どちらもファイル(`pages.txt`, `links.txt`)の読み込みが、私の環境だと20分弱かかったので気長にお待ちください...
     
 ## プログラムの説明
 最短路検索ということで、幅優先探索を使用した。
@@ -61,8 +61,11 @@ g++ ken_search.cpp -o ken_search -std=c++11
 ### (おまけ)ken_search.cppの実行結果
 面白いことを見つける、というのがなかなか思いつかなかったので、なんとなく47都道府県について、自分以外の県にリンクが接続しているか調べてみました。(例えば北海道なら、北海道以外の県(青森県〜沖縄県)にリンクが繋がっているか)
 <br><br> [結果はこちら](https://docs.google.com/document/d/1zqsUkHi2acsurVZRwINStgRQ6r5azxt3JdnPVbne1CM/edit?usp=sharing)(Google Docsに飛びます)<br><br> 
-結果、全ての県でそれぞれの県に1回のパスで繋がっている、すなわちある県のwikipediaの文章の中で、1回は全ての県の名前が出てくることがわかりました。<br>
-本当か？と思い埼玉県のwikipediaを調べてみたのですが、長崎県と鹿児島県のリンクがなかったので今は違うかもしれないです...
+結果、全ての県でそれぞれの県に1回のパスで繋がっている、すなわちある県のwikipediaの文章の中で、1回は全ての県のリンクが出てくることがわかりました。<br>
+本当か？と思い今の埼玉県のwikipediaを調べてみたのですが、長崎県と鹿児島県のリンクがなかったので違うかもしれないです...
+
+### Hikaruさんへ
+mmapを使ってみたのですが、大きいファイルだとsegmentation faultになってしまったのでもう少し考えてみます！(smallの方ではうまくいってそうでした)
 
 
 
