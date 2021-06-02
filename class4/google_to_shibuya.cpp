@@ -98,7 +98,7 @@ int main() {
   read_links(links);
 
   std::string start_key, target_key, search_key;
-  std::string start_pagename = "Google", target_pagename = "六本木";
+  std::string start_pagename = "Google", target_pagename = "渋谷";
 
   start_key = find_page(pages, start_pagename);
   target_key = find_page(pages, target_pagename);
