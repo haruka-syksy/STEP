@@ -43,6 +43,17 @@ g++ ken_search.cpp -o ken_search -std=c++11
 ```
 
 どちらもファイル(`pages.txt`, `links.txt`)の読み込みが、私の環境だと20分弱かかったので気長にお待ちください...(お時間取らせてしまいすみません)
+
+#### 追記 (2021/6/2)
+Mutsuki Ikedaさんのコードを拝見して、mapを使っていたところをunordered_mapにしてみたところ、実行時間が10分くらいになりました！(約半分)
+Mutsukiさん、ありがとうございます！！<br>
+unordered_mapを使った[google_to_shibuya2.cpp](https://github.com/koomin-1122/STEP/blob/main/class4/google_to_shibuya2.cpp)を追加しました。
+ターミナルで以下のコマンドを実行後、`./google_to_shibuya2`を実行する。
+
+```
+g++ google_to_shibuya2.cpp -o google_to_shibuya2 -std=c++11
+
+```
     
 ## プログラムの説明
 最短路検索ということで、幅優先探索を使用した。
@@ -64,10 +75,6 @@ g++ ken_search.cpp -o ken_search -std=c++11
 結果、全ての県でそれぞれの県に1回のパスで繋がっている、すなわちある県のwikipediaの文章の中で、1回は全ての県のリンクが出てくることがわかりました。<br>
 本当か？と思い今の埼玉県のwikipediaを調べてみたのですが、長崎県と鹿児島県のリンクがなかったので現在は違うかもしれないです...
 
-### 追記 (2021/6/2)
-Mutsuki Ikedaさんのコードを拝見して、mapを使っていたところをunordered_mapにしてみたところ、実行時間が10分くらいになりました！(約半分)
-Mutsukiさん、ありがとうございます！！<br>
-unordered_mapを使った`google_to_shibuya2.cpp`を追加しました。
 
 #### Hikaruさんへ
 mmapを使ってみたのですが、大きいファイルだとsegmentation faultになってしまったのでもう少し考えてみます！(smallの方ではうまくいってそうでした)
