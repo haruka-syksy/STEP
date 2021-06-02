@@ -59,9 +59,11 @@ g++ ken_search.cpp -o ken_search -std=c++11
   - `target_key`が見つからなければエラーを出して終了。
   
 ### (おまけ)ken_search.cppの実行結果
-面白いことを見つける、というのがなかなか思いつかなかったので、なんとなく47都道府県について、自分以外の県にリンクが接続しているか調べてみました。(例えば北海道なら、北海道以外の県(青森県〜沖縄県)にリンクが繋がっているか)  
-[結果はこちら](https://docs.google.com/document/d/1zqsUkHi2acsurVZRwINStgRQ6r5azxt3JdnPVbne1CM/edit?usp=sharing)(Google Docsに飛びます)  
-結果、全ての県でそれぞれの県に1回のパスで繋がっている、すなわちある県のwikipediaの文章の中で、1回は全ての県の名前が出てくることがわかりました。  
+面白いことを見つける、というのがなかなか思いつかなかったので、なんとなく47都道府県について、自分以外の県にリンクが接続しているか調べてみました。(例えば北海道なら、北海道以外の県(青森県〜沖縄県)にリンクが繋がっているか)
+<br><br> [結果はこちら](https://docs.google.com/document/d/1zqsUkHi2acsurVZRwINStgRQ6r5azxt3JdnPVbne1CM/edit?usp=sharing)(Google Docsに飛びます)<br><br> 
+結果、全ての県でそれぞれの県に1回のパスで繋がっている、すなわちある県のwikipediaの文章の中で、1回は全ての県の名前が出てくることがわかりました。<br>
+本当か？と思い埼玉県で見てみたのですが、長崎県と鹿児島県のリンクがなかったので今は違うかもしれないです...
+
 
 
 
