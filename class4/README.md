@@ -29,6 +29,7 @@ step_wikipedia-graph
 g++ google_to_shibuya.cpp -o google_to_shibuya  
 ```
 ”Google”から”渋谷”までの経路が表示される。
+`start_key`、`target_key`を変えれば他の経路も検索可能。
 
 ファイル(`pages.txt`, `links.txt`)の読み込みに20分弱かかるので気長にお待ちください...
 
@@ -36,11 +37,16 @@ g++ google_to_shibuya.cpp -o google_to_shibuya
 最短路検索ということで、幅優先探索を使用した。
 
 ### 関数ごとの説明
-- **`read_pages`** : pages.txtを読み込み、ページのidをキー、titleを値としたmapを作成する。
-- **`read_links`** : links.txtを読み込み、ページのid(from)をキー、そのページでリンクされているページidたち(to)を値としたmapを作成する。
-- **`find_page`** : ページの名前からページのidを検索して返す。見つからなければエラーを返し終了。
-- **`bfs_make_path`** : queueを使って幅優先探索を行い、`start_key`から`target_key`までのパスを返す関数。queueにはページのidだけを入れている。
-`start_key`から探索を行っていき、`target_key`と一致すれば、パスを返す。一致しなければ、そのページにリンクされているページのid(`links[search_key]`)をqueueに追加していく。  
-すでに探索したid、探索予定のidは`checked`に入れ、無限ループが起こらないようにする。  
-queueにidを追加する際、そのidまでのパスを更新する。(`search_key`の次のリンク先には、`search_key`の今までのパスと、`search_key`を入れる。)
-`target_key`が見つからなければエラーを出して終了。
+- **`read_pages`** : pages.txtを読み込み、ページのidをキー、titleを値としたmapを作成する。  
+- **`read_links`** : links.txtを読み込み、ページのid(from)をキー、そのページでリンクされているページidたち(to)を値としたmapを作成する。  
+- **`find_page`** : ページの名前からページのidを検索して返す。見つからなければエラーを返し終了。  
+- **`bfs_make_path`** : 
+  - queueを使って幅優先探索を行い、`start_key`から`target_key`までのパスを返す関数。queueにはページのidだけを入れている。
+  - `start_key`から探索を行っていき、`target_key`と一致すれば、パスを返す。一致しなければ、そのページにリンクされているページのid(`links[search_key]`)をqueueに追加していく。  
+  - すでに探索したid、探索予定のidは`checked`に入れ、無限ループが起こらないようにする。  
+  - queueにidを追加する際、そのidまでのパスを更新する。(`search_key`の次のリンク先には、`search_key`の今までのパスと、`search_key`を入れる。)  
+  - `target_key`が見つからなければエラーを出して終了。
+
+
+
+
