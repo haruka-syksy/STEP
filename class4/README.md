@@ -66,6 +66,7 @@ g++ ken_search.cpp -o ken_search -std=c++11
 
 ### 追記 (2021/6/2)
 Mutsuki Ikedaさんのコードを拝見して、mapを使っていたところをunordered_mapにしてみたところ、実行時間が10分くらいになりました！(約半分)
+Mutsukiさん、ありがとうございます！！
 
 #### Hikaruさんへ
 mmapを使ってみたのですが、大きいファイルだとsegmentation faultになってしまったのでもう少し考えてみます！(smallの方ではうまくいってそうでした)
