@@ -11,7 +11,6 @@
 
 void read_pages(std::map<std::string, std::string>& pages){
   //pages.txtを読み込む関数
-  //std::map<std::string, std::string> pages;
   std::ifstream file("data/pages.txt");
   std::string data;
   while (std::getline(file, data)) {
@@ -24,7 +23,6 @@ void read_pages(std::map<std::string, std::string>& pages){
 
 void read_links(std::map<std::string, std::set<std::string> >& links){
   //links.txtを読み込む関数
-  //std::map<std::string, std::set<std::string> > links;
   std::ifstream file("data/links.txt");
   std::string data;
   while (std::getline(file, data)) {
