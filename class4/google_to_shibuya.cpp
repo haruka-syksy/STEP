@@ -19,7 +19,6 @@ void read_pages(std::map<std::string, std::string>& pages){
     std::string id = data.substr(0, index);
     std::string title = data.substr(index + 1, data.size() - id.size() - 1);
     pages[id] = title;
-    std::cout << "pages " << id << std::endl;
   }
 }
 
@@ -33,7 +32,6 @@ void read_links(std::map<std::string, std::set<std::string> >& links){
     std::string from = data.substr(0, index);
     std::string to = data.substr(index + 1, data.size() - from.size() - 1);
     links[from].insert(to);
-    std::cout << "links " << from << std::endl;
   }
 }
 
