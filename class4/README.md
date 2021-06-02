@@ -31,7 +31,13 @@ step_wikipedia-graph
 g++ google_to_shibuya.cpp -o google_to_shibuya  
 ```
 ”Google”から”渋谷”までの経路が表示される。
+
+### 実行結果
+```
+Google -> セグウェイ -> 渋谷
+```
 `start_key`、`target_key`を変えれば他の経路も検索可能。
+<br>
 
 
   
