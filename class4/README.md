@@ -43,17 +43,6 @@ g++ ken_search.cpp -o ken_search -std=c++11
 ```
 
 どちらもファイル(`pages.txt`, `links.txt`)の読み込みが、私の環境だと20分弱かかったので気長にお待ちください...(お時間取らせてしまいすみません)
-
-#### 追記 (2021/6/2)
-Mutsuki Ikedaさんのコードを拝見して、mapを使っていたところをunordered_mapにしてみたところ、実行時間が10分くらいになりました！(約半分)
-Mutsukiさん、ありがとうございます！！<br>
-unordered_mapを使った[google_to_shibuya2.cpp](https://github.com/koomin-1122/STEP/blob/main/class4/google_to_shibuya2.cpp)を追加しました。
-ターミナルで以下のコマンドを実行後、`./google_to_shibuya2`を実行する。
-
-```
-g++ google_to_shibuya2.cpp -o google_to_shibuya2 -std=c++11
-
-```
     
 ## プログラムの説明
 最短路検索ということで、幅優先探索を使用した。
