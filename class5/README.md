@@ -3,7 +3,7 @@
 
 ## プログラム
 ### https://github.com/hayatoito/google-step-tsp からダウンロードしたもの
-- [common.py] : データの読み込みと出力を行う関数が入っている
+- [common.py] : データの読み込みと出力を行う関数が入っている(greedy_2opt.py, greedy_2opt_center.py, greedy_2opt_start.pyで使われている)
 - [output_verifier.py] : スコアを出力する
 
 ### 自分で作ったor変更したもの
@@ -20,6 +20,7 @@
 python greedy_2opt.py [入力ファイル(input_0.csv ~ input_6.csv)]
 ```
 できた経路が標準出力に表示される
+(greedy_2opt_start.pyだけinput_6.csvに5時間くらいかかりました)
 
 #### output.py
 
@@ -27,7 +28,7 @@ python greedy_2opt.py [入力ファイル(input_0.csv ~ input_6.csv)]
 python output.py [実行したいプログラム(greedy_2opt.py, greedy_2opt_center.py, greedy_2opt_start.py)]
 ```
 できた経路がカレントディレクトリにoutput_０.csv ~ output_6.csvとして保存される<br>
-(greedy_2opt_start.pyだけinput_6.csvに5時間くらいかかりました)
+
 
 #### output_verifier.py
 ```
