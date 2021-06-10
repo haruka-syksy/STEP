@@ -3,14 +3,14 @@
 
 ## プログラム
 ### https://github.com/hayatoito/google-step-tsp からダウンロードしたもの
-- [common.py] : データの読み込みと出力を行う関数が入っている(greedy_2opt.py, greedy_2opt_center.py, greedy_2opt_start.pyで使われている)
-- [output_verifier.py] : スコアを出力する
+- [common.py](https://github.com/koomin-1122/STEP/blob/main/class5/common.py) : データの読み込みと出力を行う関数が入っている(greedy_2opt.py, greedy_2opt_center.py, greedy_2opt_start.pyで使われている)
+- [output_verifier.py](https://github.com/koomin-1122/STEP/blob/main/class5/output_verifier.py) : スコアを出力する
 
 ### 自分で作ったor変更したもの
-- [greedy_2opt.py] : greedyのアルゴリズムと2-opt法を組み合わせたプログラム
-- [greedy_2opt_center.py] : greedy_2opt.pyで、真ん中らへんの点からスタートする
-- [greedy_2opt_start.py] : greedy_2opt.pyで、一番経路が短くなるスタートの点を探して、その経路を返す
-- [output.py] : 受け取ったプログラムを使って、input_0.csv ~ input06.csvを入力データとして読み込みoutput_0.csv~output_6.csvに出力する
+- [greedy_2opt.py](https://github.com/koomin-1122/STEP/blob/main/class5/greedy_2opt.py) : greedyのアルゴリズムと2-opt法を組み合わせたプログラム
+- [greedy_2opt_center.py](https://github.com/koomin-1122/STEP/blob/main/class5/greedy_2opt_center.py) : greedy_2opt.pyで、真ん中らへんの点からスタートする
+- [greedy_2opt_start.py](https://github.com/koomin-1122/STEP/blob/main/class5/greedy_2opt_start.py) : greedy_2opt.pyで、一番経路が短くなるスタートの点を探して、その経路を返す
+- [output.py](https://github.com/koomin-1122/STEP/blob/main/class5/output.py) : 受け取ったプログラムを使って、input_0.csv ~ input06.csvを入力データとして読み込みoutput_0.csv~output_6.csvに出力する
 
 
 ## 実行
