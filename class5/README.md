@@ -27,7 +27,7 @@ python greedy_2opt.py [入力ファイル(input_0.csv ~ input_6.csv)]
 ```
 python output.py [実行したいプログラム(greedy_2opt.py, greedy_2opt_center.py, greedy_2opt_start.py)]
 ```
-できた経路がカレントディレクトリにoutput_０.csv ~ output_6.csvとして保存される<br>
+input_0.csv ~ input_6.csvを読み込み、できた経路がカレントディレクトリにoutput_０.csv ~ output_6.csvとして保存される<br>
 
 
 #### output_verifier.py
