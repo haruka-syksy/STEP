@@ -1,5 +1,5 @@
 CFLAGS=-Wall -O3 -g -lm
-SRCS=main.c bothsides_munmap_right.c simple_malloc.c
+SRCS=main.c first_fit.c simple_malloc.c
 
 malloc_challenge.bin : ${SRCS} Makefile
 	$(CC) -o $@ $(SRCS) $(CFLAGS)
