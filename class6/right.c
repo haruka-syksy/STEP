@@ -41,7 +41,7 @@ void add_to_free_list(metadata_t *metadata) {
   //受け取ったmetadataの領域の次の領域のポインタを求める
   //
   // ... | metadata | object | object |...
-  //     ^          ^　　　　　^
+  //     ^          ^　　　　      　^
   //     metadata   ptr      next_ptr
   void *ptr = metadata + 1;
   metadata_t *next_ptr = (metadata_t *)((char *)ptr + metadata->size);
