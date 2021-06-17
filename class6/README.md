@@ -15,6 +15,19 @@ malloc challenge!
 
 
 ## 実行
+[Makefile](https://github.com/koomin-1122/STEP/blob/main/class6/Makefile)の2行目にある
+```
+SRCS=main.c first_fit.c simple_malloc.c
+```
+のfirst.cの部分を実行したいプログラム名に変える。<br>
+
+ターミナルで
+```
+make run
+```
+と打つとsimple mallocとmy mallocのメモリ使用効率を比べることができる。
+<br>
+
 
 ## プログラムの説明
 
