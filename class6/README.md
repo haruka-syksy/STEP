@@ -40,8 +40,8 @@ make run
 
 
 ## コメント
-munmapで、いくつかのメモリは開放されているはずなのですが使用率が変わらなかったのでもう少し考えてみます！<br>
-(あるmetadataのサイズが`4096 - sizeof(metadata_t)`より大きくても、領域の結合などの影響で`(uintptr_t)(metadata) % 4096`を満たすような位置にmetadataがないので、そこでまた分割できればもっと使用率が上がる気がします。)<br><br>
+munmapで、いくつかのメモリは開放されているはずなのですが使用率が変わらなかったのでもう少し考えてみます！(malloc visualizerでOSに返せてそうなことが確認できました)<br>
+あるmetadataのサイズが`4096 - sizeof(metadata_t)`より大きくても、領域の結合などの影響で`(uintptr_t)(metadata) % 4096`を満たすような位置にmetadataがないので、そこでまた分割できればもっと使用率が上がる気がします。<br><br>
 
 malloc visualizerの上のグラフ、見るの楽しかったです！
 
