@@ -29,9 +29,7 @@ make run
 <br>
 
 
-## プログラムの説明
-
-## スコア
+## メモリ使用率
 |        | first fit | best fit | worst fit | right | left | bothsides | right<br>munmap | left<br>munmap | bothsides<br>munmap |
 | -------| :-------: | :-------:| :-------: | :---: | :--: |  :-------: | :-------: | :-------: | :-------: |
 | Challenge 1 |70%|70%|70%|70%|**71%**|**71%**|70%|**71%**|**71%**|
@@ -42,3 +40,8 @@ make run
 
 
 ## コメント
+munmapで、いくつかのメモリは開放されているはずなのですが使用率が変わらなかったのでもう少し考えてみます！<br>
+(あるmetadataのサイズが`4096 - sizeof(metadata_t)`より大きくても、領域の結合などの影響で`(uintptr_t)(metadata) % 4096`を満たすような位置にmetadataがないので、そこでまた分割できればもっと使用率が上がる気がします。)<br><br>
+
+malloc visualizerの上のグラフ、見るの楽しかったです！
+
