@@ -2,15 +2,17 @@
 malloc challenge!
 
 ## プログラム
-- [first_fit.c] : First Fit(simple_malloc.cと同じ)
-- [best_fit.c](https://github.com/koomin-1122/STEP/blob/main/class5/greedy_2opt.py) : Best Fit
-- [worst_fit.c](https://github.com/koomin-1122/STEP/blob/main/class5/greedy_2opt_center.py) : Worst Fit
-- [right.c](https://github.com/koomin-1122/STEP/blob/main/class5/greedy_2opt_start.py) : freeする際に、**右側**につなげられる空き領域があれば領域を結合する
-- [left.c](https://github.com/koomin-1122/STEP/blob/main/class5/greedy_2opt_start.py) : freeする際に、**左側**につなげられる空き領域があれば領域を結合する
-- [bothsides.c](https://github.com/koomin-1122/STEP/blob/main/class5/greedy_2opt_start.py) : freeする際に、**両側**につなげられる空き領域があれば領域を結合する
-- [right_munmap.c](https://github.com/koomin-1122/STEP/blob/main/class5/greedy_2opt_start.py) : 右側につなげられる領域があれば結合し、munmapできる領域があればOSに返す
-- [left_munmap.c](https://github.com/koomin-1122/STEP/blob/main/class5/greedy_2opt_start.py) : 左側につなげられる領域があれば結合し、munmapできる領域があればOSに返す
-- [bothsides_munmap.c](https://github.com/koomin-1122/STEP/blob/main/class5/greedy_2opt_start.py) : 両側につなげられる領域があれば結合し、munmapできる領域があればOSに返す
+- [first_fit.c](https://github.com/koomin-1122/STEP/blob/main/class6/first_fit.c) : First Fit(simple_malloc.cと同じ)
+- [best_fit.c](https://github.com/koomin-1122/STEP/blob/main/class6/best_fit.c) : Best Fit
+- [worst_fit.c](https://github.com/koomin-1122/STEP/blob/main/class6/worst_fit.c) : Worst Fit
+- [right.c](https://github.com/koomin-1122/STEP/blob/main/class6/right.c) : freeする際に、**右側**につなげられる空き領域があれば領域を結合する
+- [left.c](https://github.com/koomin-1122/STEP/blob/main/class6/left.c) : freeする際に、**左側**につなげられる空き領域があれば領域を結合する
+- [bothsides.c](https://github.com/koomin-1122/STEP/blob/main/class6/bothsides.c) : freeする際に、**両側**につなげられる空き領域があれば領域を結合する
+- [right_munmap.c](https://github.com/koomin-1122/STEP/blob/main/class6/right_munmap.c) : 右側につなげられる領域があれば結合し、munmapできる領域があればOSに返す
+- [left_munmap.c](https://github.com/koomin-1122/STEP/blob/main/class6/left_munmap.c) : 左側につなげられる領域があれば結合し、munmapできる領域があればOSに返す
+- [bothsides_munmap.c](https://github.com/koomin-1122/STEP/blob/main/class6/bothsides_munmap.c) : 両側につなげられる領域があれば結合し、munmapできる領域があればOSに返す
+- [main.c](https://github.com/koomin-1122/STEP/blob/main/class6/main.c) 
+
 
 ## 実行
 
