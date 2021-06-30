@@ -8,23 +8,23 @@
 ### 自分で作ったもの
 - [divide.py](https://github.com/koomin-1122/STEP/blob/main/class7/divide.py) 
 
+下の図のように4つに領域分割して、分割したそれぞれの領域でgreedy法と2-opt法を用いて短い経路を見つける。<br><br>
+
+
+![領域分割](https://user-images.githubusercontent.com/70313656/123937216-e7c7fb80-d9d0-11eb-9672-b4f0a3ab1277.png)
+
+最後に領域ごとの経路を結合する。
+結合の際に経路がどうしても交差してしまったため、全体の経路に関して2-opt法を行なっている。<br><br><br>
+
 
 
 ## 実行
-#### greedy_2opt.py<br>greedy_2opt_center.py<br>greedy_2opt_start.py
+#### divide.py
 
 ```
-python greedy_2opt.py [入力ファイル(input_0.csv ~ input_6.csv)]
+python divide.py
 ```
-できた経路が標準出力に表示される
-(greedy_2opt_start.pyだけinput_6.csvに5時間くらいかかりました)
-
-#### output.py
-
-```
-python output.py [実行したいプログラム(greedy_2opt, greedy_2opt_center, greedy_2opt_start)]
-```
-input_0.csv ~ input_6.csvを読み込み、できた経路がカレントディレクトリにoutput_０.csv ~ output_6.csvとして保存される<br>
+input_0.csv ~ input_7.csvを読み込み、できた経路がカレントディレクトリにoutput_０.csv ~ output_7.csvとして保存される<br>
 
 
 #### output_verifier.py
@@ -33,26 +33,21 @@ python output_verifier.py
 ```
 自分の経路と、randomと、greedyと、saのスコアが表示される
 
-## プログラムの説明
-greedyのアルゴリズムと、2-opt法のようなものを組み合わせた。<br>
-greedyのアルゴリズムは、 https://github.com/hayatoito/google-step-tsp からダウンロードしたsolver_greedy.pyの関数をそのまま使用した。<br>
-- `two_opt関数`では、辺同士が交差しているかどうかに関わらず今つながっている辺よりも短いものがあれば繋ぎ変えている。交差は解消していたので2-opt法のようなものだと思っている...。
-<br><br>
+
 ## スコア
-|                     |greedy+2-opt <br>start with a good point|greedy+2-opt<br>start with a center point| greedy+2-opt | greedy | Simulated Annealing | 
-| ---------------     | :-------------------------------------------: | :-------------------------------------------:| :-----------------: | :----: | :-----------------: | 
-| input_0.csv (n=5)   |3291.62|3418.10|3418.10              |3418.10 |3291.62              | 
-| input_1.csv (n=8)   |3778.72|4019.57|3832.29              |3832.29 |3778.72              | 
-| input_2.csv (n=16)  |4494.42|4670.27|4994.89              |5449.44 |4494.42              | 
-| input_3.csv (n=64)  |8424.72|8736.94|8970.05              |10519.16|8150.91              | 
-| input_4.csv (n=128) |10839.97|11216.04|11489.79             |12684.06|10675.29             | 
-| input_5.csv (n=512) |20950.18|21536.66| 21376.27            |25331.84|21119.55             | 
-| input_6.csv (n=2048)|41855.51|42596.79| 42712.37            |49892.05|44393.89             | 
+|                     | divide | greedy | Simulated Annealing | 
+| ---------------     | :-----------------: | :----: | :-----------------: | 
+| input_0.csv (n=5)   |3291.62|3418.10 |3291.62              | 
+| input_1.csv (n=8)   |3778.72|3832.29 |3778.72              | 
+| input_2.csv (n=16)  |4494.42|5449.44 |4494.42              | 
+| input_3.csv (n=64)  |8424.72|10519.16|8150.91              | 
+| input_4.csv (n=128) |10839.97|12684.06|10675.29             | 
+| input_5.csv (n=512) |20950.18|25331.84|21119.55             | 
+| input_6.csv (n=2048)|41855.51|49892.05|44393.89             | 
+| input_7.csv (n=8192) |
 <br>
-一番スコアが良かったものの経路はこちらで見ることができます！<br>
+divide.pyの経路はこちらで見ることができます！<br>
 https://koomin-1122.github.io/STEP/class5/visualizer/build/default/
 
 
 ## コメント
-`greedy_2opt_center.py`では、中心からスタートした方が、最終点から最初の点まで戻ってくるときの距離が長くなりにくいのではないか(端から端まで線を引くようなことにはならない)、という考えを基に、真ん中の点を探してそこからパスを作った。0の点からスタートする`greedy_2opt.py`と比較すると、n=16より多いデータで少しスコアの改善が見られた。<br>
-スタートの点がスコアに関係してくることがわかったので、`greedy_2opt_start.py`では全ての点をスタート点としてその経路を比べ、一番短いものを出力するようにした。すると、全ての入力データでスコアに改善が見られた。
