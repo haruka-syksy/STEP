@@ -49,7 +49,8 @@ python output_verifier.py
 | input_7.csv (n=8192) |85318.87|実行中...|95983.29|?|
 <br>
 divide.pyの経路はこちらで見ることができます！<br>
-https://koomin-1122.github.io/STEP/class5/visualizer/build/default/
+
+https://koomin-1122.github.io/STEP/class7/visualizer/build/default/
 
 <br><br>
 ### 実行時間
@@ -66,7 +67,7 @@ input 7  time: 445.561465 sec<br>
 
 #### greedy_2opt_start.pyの実行時間
 input6に3時間くらいかかってました！<br>
-実行が終わらないので追記します...
+実行が終わらないのでまた追記します...
 
 
 ## コメント
