@@ -72,6 +72,8 @@ class5での自分のスコアを超えることはできなかったのです�
 input6に3時間くらいかかってました！<br>
 実行が終わらないのでまた追記します...
 
+<br><br>
+
 
 ## 質問
 C++で実装しようと試みたのですが、データを読み込むところで桁落ちが起こってしまいました。([common.cpp](https://github.com/koomin-1122/STEP/blob/main/class7/common.cpp#L18-L19))<br>
