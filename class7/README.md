@@ -14,7 +14,7 @@
 ![領域分割](https://user-images.githubusercontent.com/70313656/123937216-e7c7fb80-d9d0-11eb-9672-b4f0a3ab1277.png)
 
 最後に領域ごとの経路を結合する。
-結合の際に経路がどうしても交差してしまったため、全体の経路に関して2-opt法を行なっている。<br><br><br>
+結合の際に経路がどうしても交差してしまったため、全体の経路に関して再度2-opt法を行なっている。<br><br>
 
 
 
@@ -33,7 +33,9 @@ python output_verifier.py
 ```
 自分の経路と、randomと、greedyと、saのスコアが表示される
 
-##実行結果
+<br><br>
+
+## 実行結果
 ### スコア
 |                     | divide.py | class5でのベストスコア<br>(greedy_2opt_start.py)|greedy | Simulated<br>Annealing | 
 | ---------------     | :-----------------: | :----: | :----: | :-----------------: | 
@@ -49,6 +51,7 @@ python output_verifier.py
 divide.pyの経路はこちらで見ることができます！<br>
 https://koomin-1122.github.io/STEP/class5/visualizer/build/default/
 
+<br><br>
 ### 実行時間
 class5での自分のスコアを超えることはできなかったのですが、領域分割をしたことで実行時間がかなりはやくなりました！<br>
 #### divide.pyの実行時間
