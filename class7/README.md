@@ -52,22 +52,26 @@ divide.pyの経路はこちらで見ることができます！<br>
 
 https://koomin-1122.github.io/STEP/class7/visualizer/build/default/
 
-<br><br>
+<br>
+
 ### 実行時間
 class5での自分のスコアを超えることはできなかったのですが、領域分割をしたことで実行時間がかなりはやくなりました！<br>
 #### divide.pyの実行時間
-input 0  time: 0.001853 sec<br>
-input 1  time: 0.000682 sec<br>
-input 2  time: 0.000961 sec<br>
-input 3  time: 0.013946 sec<br>
-input 4  time: 0.047842 sec<br>
-input 5  time: 1.250135 sec<br>
-input 6  time: 17.461804 sec<br>
-input 7  time: 445.561465 sec<br>
+||sec|
+| --------- | :-----------: |
+| input_0.csv (n=5)   |0.001853 | 
+| input_1.csv (n=8)   |0.000682| 
+| input_2.csv (n=16)  |0.000961| 
+| input_3.csv (n=64)  |0.013946| 
+| input_4.csv (n=128) |0.047842|
+| input_5.csv (n=512) |1.250135|
+| input_6.csv (n=2048)|17.461804|
+| input_7.csv (n=8192)|445.561465| 
 
-#### greedy_2opt_start.pyの実行時間
+#### greedy_2opt_start.py(class5のプログラム)の実行時間
 input6に3時間くらいかかってました！<br>
 実行が終わらないのでまた追記します...
 
 
-## コメント
+## 質問
+C+
