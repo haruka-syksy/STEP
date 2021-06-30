@@ -33,8 +33,8 @@ python output_verifier.py
 ```
 自分の経路と、randomと、greedyと、saのスコアが表示される
 
-
-## スコア
+##実行結果
+### スコア
 |                     | divide.py | class5でのベストスコア<br>(greedy_2opt_start.py)|greedy | Simulated<br>Annealing | 
 | ---------------     | :-----------------: | :----: | :----: | :-----------------: | 
 | input_0.csv (n=5)   |3418.10|3291.62|3418.10 |3291.62              | 
@@ -48,6 +48,22 @@ python output_verifier.py
 <br>
 divide.pyの経路はこちらで見ることができます！<br>
 https://koomin-1122.github.io/STEP/class5/visualizer/build/default/
+
+###実行時間
+class5での自分のスコアを超えることはできなかったのですが、領域分割をしたことで実行時間がかなりはやくなりました！<br>
+####divide.pyの実行時間
+class5での自分のスコアを超えることはできなかったのですが、領域分割をしたことで実行時間がかなりはやくなりました！<br>
+
+input 0  time: 0.001853 sec<br>
+input 1  time: 0.000682 sec<br>
+input 2  time: 0.000961 sec<br>
+input 3  time: 0.013946 sec<br>
+input 4  time: 0.047842 sec<br>
+input 5  time: 1.250135 sec<br>
+input 6  time: 17.461804 sec<br>
+input 7  time: 445.561465 sec<br>
+
+greedy_2opt_start.py
 
 
 ## コメント
