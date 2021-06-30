@@ -25,14 +25,14 @@ python greedy_2opt.py [入力ファイル(input_0.csv ~ input_6.csv)]
 #### output.py
 
 ```
-python output.py [実行したいプログラム(greedy_2opt.py, greedy_2opt_center.py, greedy_2opt_start.py)]
+python output.py [実行したいプログラム(greedy_2opt, greedy_2opt_center, greedy_2opt_start)]
 ```
 input_0.csv ~ input_6.csvを読み込み、できた経路がカレントディレクトリにoutput_０.csv ~ output_6.csvとして保存される<br>
 
 
 #### output_verifier.py
 ```
-python output.py [実行したいプログラム(greedy_2opt.py, greedy_2opt_center.py, greedy_2opt_start.py)]
+python output_verifier.py 
 ```
 自分の経路と、randomと、greedyと、saのスコアが表示される
 
