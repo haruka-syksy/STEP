@@ -2,7 +2,7 @@
 
 # 宿題1, 宿題2
 - [matrix.c](https://github.com/koomin-1122/STEP/blob/main/class7/matrix/matrix.c) 
-- [matrix.py](https://github.com/koomin-1122/STEP/blob/main/class7/matrix/matrix.py) 
+- [matrix.py](https://github.com/koomin-1122/STEP/blob/main/class7/matrix/matrix.py) <br>
 [google docに飛びます](https://docs.google.com/document/d/1UiecD7neJazwShi5jB8mpxBnIw0S8OEhczzVMle1nuk/edit?usp=sharing)
 
 # 宿題3
