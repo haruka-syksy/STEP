@@ -4,10 +4,10 @@
 - [matrix.c](https://github.com/koomin-1122/STEP/blob/main/class7/matrix/matrix.c) 
 - [matrix.py](https://github.com/koomin-1122/STEP/blob/main/class7/matrix/matrix.py) <br>
 
-<br>
-
 ### 考察
 [google docに飛びます](https://docs.google.com/document/d/1UiecD7neJazwShi5jB8mpxBnIw0S8OEhczzVMle1nuk/edit?usp=sharing)
+
+<br>
 
 # 宿題3
 帰ってきた！！巡回セールスマン問題(TCP)
