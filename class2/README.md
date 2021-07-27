@@ -6,5 +6,6 @@
 - C=ABを計算する(この部分の実行時間を測定する)
 - Nと実行時間の関係をグラフにする(計算量との関係は？)
 
-[考察(google docに飛びます)](https://docs.google.com/document/d/1l2X4MZmMgwKMTE3G65yxZ1McpTKd3TYWvChJkxXw1V8/edit?usp=sharing)
+## 考察
+[class2.pdf](https://github.com/koomin-1122/STEP/edit/main/class2/class2.pdf)
  
