@@ -5,5 +5,5 @@
 ```
 python anagram2.py [txtファイル]
 ```
-txtファイルは、small.txtかmedium.txtかlarge.txtのどれか
+入力のtxtファイルは、small.txtかmedium.txtかlarge.txtのどれか<br>
 出力は、それぞれのアナグラムが列挙されたファイル
