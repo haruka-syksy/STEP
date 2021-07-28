@@ -7,5 +7,5 @@
 - Nと実行時間の関係をグラフにする(計算量との関係は？)
 
 ## 考察
-[class2.pdf](https://github.com/koomin-1122/STEP/edit/main/class2/class2.pdf)
+[class2.pdf](https://github.com/koomin-1122/STEP/blob/main/class2/class2.pdf)
  
